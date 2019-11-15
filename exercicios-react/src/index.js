@@ -6,6 +6,6 @@ import PrimeiroComponente from './components/PrimeiroComponente'
 const element = document.getElementById('root')
 ReactDom.render(
     <>
-        <PrimeiroComponente />
+        <PrimeiroComponente valor="Bom dia!" abcd={123**2}/>
     </>
     , element)

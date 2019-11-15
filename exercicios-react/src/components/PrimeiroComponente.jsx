@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default () => <h1>Primeiro Componente (Arrow)!</h1>
+let isLegal = false
+
+export default props => (
+    <div>
+        <h1>{props.valor}</h1>
+        <h2>{props.abcd}</h2>
+        <p>{1 + 1}</p>
+        <p>{isLegal ? 'Sim' : 'Não'}</p>
+        <p>{Math.random()}</p>
+    </div>
+)
 
 
 // export default function() {
