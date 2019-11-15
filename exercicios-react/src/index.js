@@ -12,9 +12,9 @@ const element = document.getElementById('root')
 
 ReactDom.render(
     <>
-        <Familia>
-            <Membro nome="Andre" sobrenome="Pereira" />
-            <Membro nome="Carla" sobrenome="Pereira" />
+        <Familia sobrenome="Pereira">
+            <Membro nome="Andre" />
+            {/* <Membro nome="Carla" /> */}
         </Familia>
         {/* <PrimeiroComponente valor="Bom dia!" abcd={123**2}/> */}
         {/* <MultElementos /> */}
