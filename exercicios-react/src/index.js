@@ -14,7 +14,8 @@ ReactDom.render(
     <>
         <Familia sobrenome="Pereira">
             <Membro nome="Andre" />
-            {/* <Membro nome="Carla" /> */}
+            <Membro nome="Carla" />
+            <Membro nome="Joana" />
         </Familia>
         {/* <PrimeiroComponente valor="Bom dia!" abcd={123**2}/> */}
         {/* <MultElementos /> */}
