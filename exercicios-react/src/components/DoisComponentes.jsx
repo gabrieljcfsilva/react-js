@@ -6,4 +6,5 @@ const CompA = props =>
 const CompB = props =>
     <h1>Segundo diz: {props.valor}</h1>
 
+export default CompA
 export { CompA, CompB }
