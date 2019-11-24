@@ -7,11 +7,13 @@ const api = axios.create({
 const createTodo = data => api.post('/todos', data)
 const refreshTodos = () => api.get('/todos?sort=-createdAt')
 const deleteTodo = data => api.delete(`/todos/${data._id}`)
+const updateTodo = (id, data) => api.put(`/todos/${id}`, data)
 
 const apis = {
     createTodo,
     refreshTodos,
-    deleteTodo
+    deleteTodo,
+    updateTodo
 }
 
 export default apis
