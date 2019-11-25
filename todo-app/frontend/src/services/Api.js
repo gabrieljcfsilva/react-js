@@ -5,7 +5,7 @@ const api = axios.create({
 })
 
 const createTodo = data => api.post('/todos', data)
-const refreshTodos = () => api.get('/todos?sort=-createdAt')
+const refreshTodos = search => api.get(`/todos?sort=-createdAt${search}`)
 const deleteTodo = data => api.delete(`/todos/${data._id}`)
 const updateTodo = (id, data) => api.put(`/todos/${id}`, data)
 
